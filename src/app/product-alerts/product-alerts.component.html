@@ -1,0 +1,8 @@
+<p>product-alerts works!</p>
+<p *ngIf="product && product.price > 700">
+  <button type="button" (click)="notify.emit()">Notify Me</button>
+</p>
+<!-- como notify es un evento, emit sirve para llamar al valor que le corresponde, en
+este caso el valor de "notify" es "onNotify" que provienen del padre, en este
+caso se envia hacia el padre a diferencia de la propiedad "product" que proviene
+del padre -->

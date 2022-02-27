@@ -15,6 +15,9 @@ export class ProductListComponent {
     if (x) return window.alert(`The product has been shared! ${x}`);
     return window.alert(`The product has been shared! ${x}`);
   }
+  onNotify() {
+    window.alert("You will be notified when the product goes on sale");
+  }
 }
 
 /*
