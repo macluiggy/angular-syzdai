@@ -9,4 +9,5 @@
   <h4>{{ product.price | currency }}</h4>
   <!-- currency transforma el valor en dolares -->
   <p>{{ product.description }}</p>
+  <button (click)="addToCart(product)">Buy</button>
 </div>
