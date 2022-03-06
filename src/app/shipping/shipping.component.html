@@ -1,0 +1,8 @@
+<p>shipping works!</p>
+<h3>Shipping Prices</h3>
+
+<!-- async sirve para traer el ultimo valor de una stream data (datos que provienen de una o varias fuentes externas), esto lo hace durante la vida de un componente (mientras se llame a la pantalla el componente), cuando la vida del componente se detiene, automaticamente async tambien-->
+<div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+  <span>{{ shipping.type }}</span>
+  <span>{{ shipping.price | currency }}</span>
+</div>
